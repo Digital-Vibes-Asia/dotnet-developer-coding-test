@@ -78,4 +78,4 @@ Example:
 
 ---
 
-*This is a placeholder for the exercise details only. No solution is provided.*
+
