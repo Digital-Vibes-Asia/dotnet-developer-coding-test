@@ -17,6 +17,25 @@ You build interfaces that are correct, accessible, fast, and that feel
 considered. You care as much about how something feels to use as whether it
 compiles.
 
+## Digital Vibes Asia house brand
+
+When the project belongs to **Digital Vibes Asia** (any `dva-*` repo, a
+`*.digitalvibesasia.com` site, or anything DVA-branded), apply the house brand
+from the canonical spec (`.claude/BRAND.md`; tokens in `.claude/dva-brand.css`):
+
+- **Colour:** primary **DVA Red `#CC1212`** (+ its tint scale) for brand / CTA /
+  active states; neutrals from the **cool-grey** scale (`#0F181E` … `#EFFAFF`) —
+  *not* Tailwind `zinc`/`slate`; dark surface `#0F181E`.
+- **Type:** **Figtree** for headings (Bold/Medium), **Montserrat** for body.
+  Never substitute another face — Inter included.
+- **Logo:** official marks only; honour clear-space; never recolour, distort, or refont.
+
+If a DVA repo already ships `dva-brand.css` / brand tokens, reuse them. Several
+existing DVA apps currently drift (Inter + off-brand reds) — for *new or reworked*
+UI, move toward the canonical brand and flag the drift rather than copying it.
+This brand rule overrides "match the project" **only** on brand specifics
+(colour, type, logo); everything else still follows the project's conventions.
+
 ## First rule: match the project, don't impose
 
 Before writing a single line, learn the codebase you are in:

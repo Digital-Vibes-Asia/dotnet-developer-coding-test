@@ -1,0 +1,52 @@
+/* ============================================================================
+   Digital Vibes Asia — brand tokens (canonical, from "DVA Brand CI 2023")
+   Drop into any DVA app and use the variables. Single source of truth.
+   ============================================================================ */
+
+/* Brand fonts — Figtree (headings) + Montserrat (body) */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ---- Core brand ---- */
+  --dva-red:   #CC1212;  /* primary */
+  --dva-dark:  #0F181E;  /* secondary — dark cool grey */
+  --dva-white: #FFFFFF;
+
+  /* ---- Red scale (tints) ---- */
+  --red-900:#BE0000; --red-800:#CC1212; --red-700:#D91D1A; --red-600:#EA2B20;
+  --red-500:#F9371E; --red-400:#F54A3F; --red-300:#EC6D67; --red-200:#F59692;
+  --red-100:#FFCBCE; --red-50:#FFEAEC;
+
+  /* ---- Cool-grey scale (neutrals — use instead of zinc/slate) ---- */
+  --grey-900:#0F181E; --grey-800:#2F383F; --grey-700:#4D565D; --grey-600:#606971;
+  --grey-500:#879199; --grey-400:#A7B2BA; --grey-300:#CBD6DF; --grey-200:#DCE7F0;
+  --grey-100:#E9F2FA; --grey-50:#EFFAFF;
+
+  /* ---- Semantic ---- */
+  --brand:            var(--dva-red);
+  --brand-hover:      var(--red-700);
+  --bg:               var(--dva-white);
+  --bg-dark:          var(--dva-dark);
+  --text:             var(--grey-900);
+  --text-muted:       var(--grey-500);
+  --border:           var(--grey-200);
+
+  /* ---- Type ---- */
+  --font-heading: 'Figtree', sans-serif;
+  --font-body:    'Montserrat', sans-serif;
+}
+
+/* ----------------------------------------------------------------------------
+   Tailwind v4 — paste into your CSS (after @import "tailwindcss";)
+   @theme {
+     --color-brand: #CC1212;
+     --color-grey-900: #0F181E;  --color-grey-50: #EFFAFF;  (… full scale …)
+     --font-heading: "Figtree", sans-serif;
+     --font-body: "Montserrat", sans-serif;
+   }
+
+   Tailwind v3 — tailwind.config.js → theme.extend:
+   colors: { brand: { DEFAULT:'#CC1212', 900:'#BE0000', 800:'#CC1212', … 50:'#FFEAEC' },
+             grey:  { 900:'#0F181E', 800:'#2F383F', … 50:'#EFFAFF' } },
+   fontFamily: { heading:['Figtree','sans-serif'], sans:['Montserrat','sans-serif'] }
+   ---------------------------------------------------------------------------- */
