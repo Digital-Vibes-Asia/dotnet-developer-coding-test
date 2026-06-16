@@ -1,0 +1,9 @@
+@EmployeeDepartmentReport.Api_HostAddress = http://localhost:5162
+
+### Get the full employee list
+GET {{EmployeeDepartmentReport.Api_HostAddress}}/api/employees
+Accept: application/json
+
+### Get the per-department headcount report
+GET {{EmployeeDepartmentReport.Api_HostAddress}}/api/report/headcount
+Accept: application/json
